@@ -2,11 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Login from './Login'
 import reportWebVitals from './reportWebVitals';
+import Recover from './Recover';
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import Signup from './Signup'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+        <Route exact path="/">
+        <App/>
+        </Route>
+        <Route exact path="/signin">
+        <Login/>
+        </Route>
+        <Route exact path="/recover">
+        <Recover/>
+        </Route>
+        <Route exact path="/signup">
+        <Signup/>
+        </Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
