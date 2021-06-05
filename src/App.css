@@ -184,7 +184,7 @@ body .container {
 }
 
 .walk-container .walk-pages .image-1 {
-  width: 85%;
+  width: 87%;
   -webkit-filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2)) hue-rotate(-30deg);
           filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2)) hue-rotate(-30deg);
 }
